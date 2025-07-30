@@ -10,12 +10,12 @@ main()
 
     if (num > 0)
     {
-        cout << num << " is Positive" << endl;
+        cout << num << "  Positive number" << endl;
     }
     else if (num == 0) {
-        cout << num << " is Neutral" << endl;
+        cout << num << " Neutral number" << endl;
     }
     else{
-        cout << num << " is Negative" << endl;
+        cout << num << " Negative number" << endl;
     }
 }
