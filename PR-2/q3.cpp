@@ -1,23 +1,21 @@
 #include <iostream>
 using namespace std;
 
-main()
-{
-    int inputNumber, digitSum = 0;
+int main() {
+    int n, sum = 0;
 
-    cout << "Enter any Number: ";
-    cin >> inputNumber;
+    cout << "Enter the  Number : ";
+    cin >> n;
 
-    while (inputNumber > 0 || digitSum >= 10)
-    {
-        if (inputNumber == 0)
-        {
-            inputNumber = digitSum;
-            digitSum = 0;
+    while (n > 0 || sum >= 10) {
+        if (n == 0) {
+            n = sum;
+            sum = 0;
         }
-        digitSum += inputNumber % 10;
-        inputNumber = inputNumber / 10;
+        sum += n % 10;
+        n /= 10;
     }
 
-    cout << "This number final: " << digitSum << endl;
+    cout << " This Final : " << sum << endl;
+    return 0;
 }

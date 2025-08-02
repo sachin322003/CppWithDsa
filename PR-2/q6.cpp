@@ -1,18 +1,16 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    long int inputNumber;
-    cout << "Enter your Number: ";
-    cin >> inputNumber;
+main() {
+    int a, count = 0;
 
-    int digitCount = 0;
+    cout << "Enter the Number : ";
+    cin >> a;
 
-    do {
-        inputNumber = inputNumber / 10;
-        digitCount++;
-    } while (inputNumber != 0);
+    while(a != 0){
+        count++;
+        a = a / 10;
+    }
 
-    cout << "Total Number of Digits: " << digitCount << endl;
+    cout << "The Length is : " << count;
 }

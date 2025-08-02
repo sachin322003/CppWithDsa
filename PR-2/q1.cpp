@@ -1,17 +1,16 @@
 #include <iostream>
 using namespace std;
 
-int main()
- {
-    int n;
-    cout << "Enter Number of Terms:";
+main()
+{
+    int n, a = 1;
+
+    cout << "Enter the Number : ";
     cin >> n;
 
-    int i,r=1;
-
-    for (i = 1; i <= n; i++)
+    for (int i = 1; i <= n; i++)
     {
-        cout << r <<endl;
-        r +=i;
+        cout << a << " ";
+        a += i;
     }
 }
